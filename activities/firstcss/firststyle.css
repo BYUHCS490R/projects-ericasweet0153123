@@ -7,6 +7,10 @@ main h1 {
     color: aqua;
 }
 
+main ul {
+    font-size: 20pt;
+}
+
 header h1 {
     color: crimson;
 }
