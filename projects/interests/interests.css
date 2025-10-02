@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FEF5EF;
+    font-size: 13pt;
+}
+
+h1 {
+    color: #9d5c63;
+}
+
+p {
+    color: #584B53;
+}
+
+#reason {
+    color: #5b5941;
+}
+
+.why {
+    color: #5b5941;
+}
+
+.star {
+    color: #FF4217;
+}
+
+.shadow {
+    color: #fbc3bc;
+}
