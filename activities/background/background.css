@@ -1,0 +1,24 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background: url('bluebg.jpg') rgb(3, 3, 124);
+}
+
+header {
+    background: url('wavedeco.jpg') no-repeat top right;
+    /* background-image: url('wavedeco.jpg');
+    background-repeat: no-repeat;
+    background-position: right; */
+}
+
+.mylist {
+    /* list-style-image: url(heartdot.png); */
+    /* list-style-type: none; */
+    list-style-image: url(heartdot.png);
+}
+
+.other {
+    background-image: url('bluebg.jpg');
+    background-repeat: repeat;
+    background-color: rgb(3, 3, 124);
+}
