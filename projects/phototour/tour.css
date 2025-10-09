@@ -1,5 +1,5 @@
 .current {
-    color: black;
+    color: #b2967d;
 }
 
 .navlink {
@@ -9,5 +9,21 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     color: white;
-    background: url('sandbg.jpeg') #f7ece1
+    background: url('sandbg.jpeg') repeat #f7ece1
+}
+
+.flag {
+    background: url('southkoreaflagdeco.jpg') no-repeat top right;
+}
+
+.ocean {
+    list-style-image: url(oceandot.png);
+}
+
+h2 {
+    color: #7389ae
+}
+
+p {
+    color: #23395b
 }
