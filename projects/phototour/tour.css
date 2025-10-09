@@ -1,0 +1,13 @@
+.current {
+    color: black;
+}
+
+.navlink {
+    color: #008cff;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    background: url('sandbg.jpeg') #f7ece1
+}
