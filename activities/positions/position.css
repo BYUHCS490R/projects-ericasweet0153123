@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aqua;
+    padding: 0;
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+}
+
+main p {
+    border: thin dotted green;
+    padding: 5px 10px 20px 50px
+    margin: 10px 30px;
+}
+
+nav {
+    border: thin solid black;
+    padding: 15px;
+    padding-top: 50px;
+    padding-right: 5px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    background-color: blue;
+}
+
+main h1 {
+    border: thin dashed blue;
+}
+
+main h1 {
+    border-bottom: thin dashed blue;
+    width: 50%
+}
