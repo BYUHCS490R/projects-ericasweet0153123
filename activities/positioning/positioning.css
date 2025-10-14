@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*margin-top: 300px; /*move content below our navigation*/
+}
+
+nav a{
+    display: block; /*inline-block */
+    padding: 10px;
+    background-color: aqua;
+    border-bottom: thin solid white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.dog {
+    border: thin solid black;
+    width: 150px;
+}
+
+.dog img {
+    width: 100%;
+}
+
+.floater {
+    float: left;
+}
+
+.hammer {
+    position: fixed;
+    top: 10px;
+    left: 200px;
+    margin: 0;
+    z-index: 10;
+    display: none;
+}
+
+/*
+.hammer {
+    position: relative;
+    bottom: 20px;
+    left: -300px;
+}*/
+
+.clear {
+    clear: both;
+}
