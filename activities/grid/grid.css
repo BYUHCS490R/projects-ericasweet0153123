@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 6fr 6fr 2fr;
+    gap: 10px;
+}
+
+.child {
+    background-color: aquamarine;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "lside main rside"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: main;
+}
+
+nav {
+    grid-area: lside;
+}
