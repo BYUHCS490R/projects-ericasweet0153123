@@ -35,25 +35,42 @@ nav {
 }
 
 .primary {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     flex: 1;
     padding: 20px;
-    margin-top: 20px
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.left {
+    flex-direction: column;
 }
 
 .piece {
     border: thin solid lightgreen;
-    margin: 5px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px grey;
     width: 300px;
 }
 
-.important {
-    order: -1;
+img {
+    width: 100%;
 }
 
-.line {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly
+footer {
+    padding: 20px;
+}
+
+.footerlink {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footerlink a {
+    display: block;
 }
