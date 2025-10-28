@@ -24,6 +24,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     background-color: aquamarine;
+    flex-direction: row;
 }
 
 nav a {
@@ -61,4 +62,23 @@ nav a:hover {
 .row {
     display: flex;
     flex-flow: row wrap;
+}
+
+/*@media ONLY screen AND (max-width: 600px) {
+
+} if needed */
+
+@media ONLY screen AND (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+    .main-row {
+        flex-direction: column-reverse;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .main {
+        order: -1;
+    }
 }
