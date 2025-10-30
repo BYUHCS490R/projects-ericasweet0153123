@@ -106,6 +106,7 @@ li {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #cb9b65;
     text-align: left;
+    margin-bottom: 20px; 
 }
 
 figcaption {
