@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: pink;
+    flex-direction: row;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: pink;
+    color: brown;
+}
+
+nav a:hover {
+    background-color: brown;
+    color: pink;
+}
+
+.side {
+    width: 200px;
+}
+
+@media ONLY print {
+    
+}
+
+@media ONLY screen AND (max-width: 480px) {
+
+}
