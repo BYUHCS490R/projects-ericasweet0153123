@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header>
+        Hyojin's Web Design Site
+    </header>
+    <main>
+        <h1>Tables</h1>
+        <table border="1">
+            <caption>My Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Number</th>
+                    <th>Title</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+                <tr>
+                    <th colspan="6">Fall 2025</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CS</td>
+                    <td rowspan="2">140</td>
+                    <td>Web Design</td>
+                    <td>11 AM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    
+                    <td>Web Design</td>
+                    <td>12 PM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>415</td>
+                    <td>Operating Systems</td>
+                    <td>2 PM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>401</td>
+                    <td>Web Applications</td>
+                    <td>2 PM MWF</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>The &lt;table&gt; tag is used when we express data in a row-and-column structure. We should use table tag only when the data has a tabular meaning. For example, we can use it for grade table or schedule table.</p>
+        <p>On the other hand, we should not use the &lt;table&gt; tag for layout purposes. In the past, we used table tags to design web pages. However, nowadays we design web pages with CSS.</p>
+        <p>We should use additional attributes to make a table accessible to screen readers. Firstly, we can make a structure by using &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; tags. Secondly, we can indicate the purpose of the table by using the &lt;caption&gt; tag. Finally, if the description is located on the left side rather than at the top, we can put id attribute in the description tag and put header properties in the data cell that should be linked to the header cell. This helps screen readers convey the meaning of each data cell. </p>
+    </main>
+    <footer>
+        &copy; 2025 Hyojin Cho
+    </footer>
+</body>
+</html>
