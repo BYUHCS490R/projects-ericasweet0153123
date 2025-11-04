@@ -12,7 +12,7 @@
     </header>
     <main>
         <h1>Tables</h1>
-        <table border="1">
+        <table class="schedule">
             <caption>My Class Schedule</caption>
             <thead>
                 <tr>
@@ -30,7 +30,7 @@
             <tbody>
                 <tr>
                     <td>CS</td>
-                    <td rowspan="2">140</td>
+                    <td rowspan="2" class="num">140</td>
                     <td>Web Design</td>
                     <td>11 AM MWF</td>
                     <td>P3</td>
@@ -68,9 +68,8 @@
                 </tr>
             </tfoot>
         </table>
-        <p>The &lt;table&gt; tag is used when we express data in a row-and-column structure. We should use table tag only when the data has a tabular meaning. For example, we can use it for grade table or schedule table.</p>
-        <p>On the other hand, we should not use the &lt;table&gt; tag for layout purposes. In the past, we used table tags to design web pages. However, nowadays we design web pages with CSS.</p>
-        <p>We should use additional attributes to make a table accessible to screen readers. Firstly, we can make a structure by using &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; tags. Secondly, we can indicate the purpose of the table by using the &lt;caption&gt; tag. Finally, if the description is located on the left side rather than at the top, we can put id attribute in the description tag and put header properties in the data cell that should be linked to the header cell. This helps screen readers convey the meaning of each data cell. </p>
+        <p>The attribute border is old way of html and separating the design and structure using CSS is better, so we don&apos;t use the border attribute anymore. It can cause HTML errors now.</p>
+        <p>The easiest way to give different colors to rows is using :nth-child() selector in CSS.</p>
     </main>
     <footer>
         &copy; 2025 Hyojin Cho

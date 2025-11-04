@@ -5,3 +5,29 @@ body {
 p {
     color: rgb(152, 61, 28);
 }
+
+.schedule {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    caption-side: bottom;
+}
+
+.schedule thead tr {
+    background-color: rgb(97, 97, 238);
+    color: white;
+}
+
+.schedule tfoot tr {
+    background-color: rgb(97, 97, 238);
+    color: white;   
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: rgb(187, 186, 186);
+}
+
+.num {
+    vertical-align: middle;
+}
