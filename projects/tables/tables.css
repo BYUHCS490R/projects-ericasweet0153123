@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(60, 49, 49);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(126, 106, 106);
+    flex-direction: row;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(126, 106, 106);
+    color: rgb(255, 254, 240);
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: rgb(255, 254, 240);
+    color: rgb(126, 106, 106);
+}    
+
+.highlight {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.tablewrap {
+    flex: 1;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    background-color: rgb(255, 254, 240);
+    border-left: 1px solid rgb(126, 106, 106);
+    padding: 12px;
+    position: sticky;
+    top: 12px;
+}
+
+.sidebar h3 {
+    margin: 0;
+    color: rgb(60, 49, 49);
+}
+
+.musical {
+    border: thin solid rgb(101, 95, 32);
+    padding: 5px;
+    background-color: rgb(126, 106, 106);
+}
+
+.musical th, .musical td {
+    border: thin solid rgb(101, 95, 32);
+    padding: 5px;
+}
+
+.musical thead tr {
+    background-color: rgb(60, 49, 49);
+    color: rgb(255, 254, 240);
+}
+
+.musical tbody tr {
+    background-color: rgb(255, 254, 240);
+    color: rgb(60, 49, 49);
+}
+
+.musical tbody tr:nth-child(odd) {
+    background-color: rgb(212, 244, 123);
+}
+
+.musical tbody tr:nth-child(even) {
+    background-color: rgb(227, 238, 197);
+}
