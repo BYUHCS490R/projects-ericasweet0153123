@@ -13,45 +13,51 @@
     <main>
         <h1>Forms</h1>
         <form action="formprocess.html" method="post">
-            <div>
-                <label for="fname">Full Name:</label>
-                <input type="text" name="fullname" placeholder="Full Name" id="fname">
-            </div>
-            <div>
-                <label for="fname">Email:</label>
-                <input type="email" name="fullname" value="your@email.com" id="fname">
-            </div>
-            <div>
-                <label for="pass">Password:</label>
-                <input type="password" name="pass" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank">---</option>
-                    <option value="CA">California</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <label><input type="checkbox" checked> I agree to the terms</label>
-            </div>
-            <div>
-                Gender
-                <label><input type="radio" name="gender" value="Male"> Male</label>
-                <label><input type="radio" name="gender" value="Female"> Female</label>
-            </div>
-            <div>
-                <label for="comment">Comments:</label>
-                <textarea name="comment" id="comment">Hello</textarea>
-            </div>
-            <input type="submit" value="Sign Up">
-            <ul>
-                <li>The attribute action used in the form tag specifies the destination of the data entered by the user.  </li>
-                <li>The attribute used in the form tag defines how to send the data (e.g., using GET or POST).</li>
-                <li>GET is used for simple requests such as searches. With GET, the data appears in the URL.  POST is used to send sensitive information such as login details. The data does not appear in the URL.</li>
-            </ul>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="fname">Email:</label>
+                    <input type="email" name="fullname" value="your@email.com" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">---</option>
+                        <option value="CA">California</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" checked> I agree to the terms</label>
+                </div>
+                <div class="check-row">
+                    Gender
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+                <ul>
+                    <li>There are many ways to style a form. In CSS, we can make a website look better by using the padding, margin, and background-color properties. Also, by using “display: flex”, we can arrange each row horizontally and adjust the spacing with the gap properly.</li>
+                    <li>Flex allows the website to stay responsive and visually balanced regardless of the screen size. On desktop, by using “display: flex”, we can align elements horizontally, making the labels and input fields well organized. On mobile, with @media (e.g. max-width: 480px) and flex-direction: column, we can make the layout more readable.</li>
+                </ul>
+            </fieldset>
         </form>
     </main>
     <footer>
