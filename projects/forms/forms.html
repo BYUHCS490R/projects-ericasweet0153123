@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acai Lovers Community</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Acai Lovers Community</h1>
+    </header>
+    <main>
+        <h2>Acai bowl Lovers in Hawaii</h2>
+        <form action="process.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" value="your@email.com" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="ID">ID:</label>
+                    <input type="text" name="ID" id="ID">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" placeholder="123-456-7890" id="phone">
+                </div>
+                <div class="form-row">
+                    <label for="city">City:</label>
+                    <select name="city" id="city">
+                        <option value="blank">---</option>
+                        <option value="Laie" selected>Laie</option>
+                        <option value="Kahuku">Kahuku</option>
+                        <option value="Hauula">Hauula</option>
+                        <option value="Honolulu">Honolulu</option>
+                    </select>
+                </div>
+                <div class="check-row">
+                    Gender
+                    <label><input type="radio" name="gender" value="Male"> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </div>
+                <div class="check-row">
+                    <p>I'm willing to join an acai bowl meetup at least once a month.</p>
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" checked> I agree to the terms</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hyojin Cho</p>
+    </footer>
+</body>
+</html>

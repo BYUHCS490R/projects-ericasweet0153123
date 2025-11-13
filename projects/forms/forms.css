@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a2040;
+}
+
+header {
+    background-color: #c880b7;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: left;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border-color: #4a2040;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: lemonchiffon;
+}
+
+.form-row input[type='submit'] {
+    background-color: #4a2040;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+fieldset {
+    background-color: #f5cce8;
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    background-color: #ec9ded;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    background-color: #9f6ba0;
+    color: white;
+    padding: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+
+    .form-row input[type='submit'] {
+    padding: 10px 40px;
+    }
+}
