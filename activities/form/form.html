@@ -12,7 +12,7 @@
     </header>
     <main>
         <h1>Forms</h1>
-        <form action="formprocess.html" method="post">
+        <form action="formprocess.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -20,8 +20,8 @@
                     <input type="text" name="fullname" placeholder="Full Name" id="fname">
                 </div>
                 <div class="form-row">
-                    <label for="fname">Email:</label>
-                    <input type="email" name="fullname" value="your@email.com" id="fname">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" value="your@email.com" id="email">
                 </div>
                 <div class="form-row">
                     <label for="pass">Password:</label>
@@ -46,6 +46,10 @@
                     <label><input type="radio" name="gender" value="Female"> Female</label>
                 </div>
                 <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="18" max="100">
+                </div>
+                <div class="form-row">
                     <label for="comment">Comments:</label>
                     <textarea name="comment" id="comment">Hello</textarea>
                 </div>
@@ -54,8 +58,10 @@
                     <input type="submit" value="Sign Up">
                 </div>
                 <ul>
-                    <li>There are many ways to style a form. In CSS, we can make a website look better by using the padding, margin, and background-color properties. Also, by using “display: flex”, we can arrange each row horizontally and adjust the spacing with the gap properly.</li>
-                    <li>Flex allows the website to stay responsive and visually balanced regardless of the screen size. On desktop, by using “display: flex”, we can align elements horizontally, making the labels and input fields well organized. On mobile, with @media (e.g. max-width: 480px) and flex-direction: column, we can make the layout more readable.</li>
+                    <li>JavaScript is a programming language that makes webpages interactive. By using JavaScript, clicking buttons, opening menus, and validating user input are possible. Basically, the company called “Netscape” originally named it as “LiveScript”, but at that time, Java was so popular so that they were led to name it as JavaScript. The name is like Java, but it&apos;s a completely different language.</li>
+                    <li>Two methods to run JavaScript are first, in a web browser (behind DOM environment), second, in Node.js environment (outside of the browser). In a web browser, it runs with html, and it runs in chrome, edge, firefox, and safari. In Node.js environment, you can build servers, and you can read/write files.</li>
+                    <li>The most popular front-end js library was jQuery. From 2006 to 2015, it was almost a standard for web. This was popular because it made DOM manipulation easily.</li>
+                    <li>The most current popular front-end js library is React. It was developed by facebook, and it&apos;s most in-demand in job market. It is used as a standard for SPA (Single Page Application).</li>
                 </ul>
             </fieldset>
         </form>
@@ -63,5 +69,35 @@
     <footer>
         <p>&copy; 2025 Hyojin Cho</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+            
+            if (!fullname || !email) {
+                alert("You need a name and email.");
+                return;
+            }
+
+            if (!age || age <18) {
+                alert("You need to be at least 18.");
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            alert("Form Submitted");
+            console.log(formData);
+    });
+    </script>
 </body>
 </html>
