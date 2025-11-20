@@ -12,7 +12,8 @@
     </header>
     <main>
         <h2>Acai Bowl Lovers in Hawaii</h2>
-        <form action="process.html" method="post">
+        <div id="message"></div>
+        <form action="process.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -21,7 +22,7 @@
                 </div>
                 <div class="form-row">
                     <label for="email">Email:</label>
-                    <input type="email" name="email" value="your@email.com" id="email">
+                    <input type="email" name="email" id="email" placeholder="your@email.com">
                 </div>
                 <div class="form-row">
                     <label for="ID">ID:</label>
@@ -45,19 +46,24 @@
                         <option value="Honolulu">Honolulu</option>
                     </select>
                 </div>
-                <div class="check-row">
-                    Gender
-                    <label><input type="radio" name="gender" value="Male"> Male</label>
-                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                <div class="form-row check-row">
+                    <span class="label-text">Gender:</span>
+                    <label class="option"><input type="radio" name="gender" value="Male"> Male</label>
+                    <label class="option"><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="18" max="100" placeholder="18">
                 </div>
                 <div class="form-row">
                     <label for="comment">Comments:</label>
                     <textarea name="comment" id="comment">Hello</textarea>
                 </div>
-                <div class="check-row">
-                    <p>I'm willing to join an acai bowl meetup at least once a month.</p>
-                    <div class="spacer"></div>
-                    <label><input type="checkbox" checked> I agree to the terms</label>
+                <div class="form-row check-row">
+                    <span class="label-text"></span>
+                    <label class="option">
+                        <input type="checkbox" name="terms" checked> I agree to the terms
+                    </label>
                 </div>
                 <div class="form-row">
                     <div class="spacer"></div>
@@ -69,5 +75,6 @@
     <footer>
         <p>&copy; 2025 Hyojin Cho</p>
     </footer>
+    <script src="forms.js"></script>
 </body>
 </html>

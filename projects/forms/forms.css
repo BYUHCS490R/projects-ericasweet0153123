@@ -18,7 +18,18 @@ header {
     margin: 15px 0;
 }
 
-.form-row label {
+.check-row .option {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.check-row input[type="radio"],
+.check-row input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.label-text {
     width: 150px;
     text-align: left;
 }
