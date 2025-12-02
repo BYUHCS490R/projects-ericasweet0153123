@@ -99,6 +99,11 @@ header h1 {
 .row {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+}
+
+.home .row {
+    justify-content: flex-start;
 }
 
 .card {
