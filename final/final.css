@@ -134,6 +134,86 @@ figcaption {
     color: #619b8a
 }
 
+.highlight {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.tablewrap {
+    flex: 1;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    background-color: rgb(255, 254, 240);
+    border-left: 1px solid rgb(126, 106, 106);
+    padding: 12px;
+    position: sticky;
+    top: 12px;
+}
+
+.sidebar h3 {
+    margin: 0;
+    color: #233d4d;;
+}
+
+.summary {
+    border: thin solid rgb(101, 95, 32);
+    padding: 5px;
+    background-color: #619b8a;
+}
+
+.summary th, .musical td {
+    border: thin solid rgb(101, 95, 32);
+    padding: 5px;
+}
+
+.summary thead tr {
+    background-color: #384a34;
+    color: rgb(255, 254, 240);
+}
+
+.summary tbody tr {
+    background-color: rgb(255, 254, 240);
+    color: #233d4d;
+}
+
+.summary tbody tr:nth-child(odd) {
+    background-color: rgb(227, 238, 197);
+}
+
+.summary tbody tr:nth-child(even) {
+    background-color: #a1c181;
+}
+
+.koreaimage {
+    width: 220px;
+    max-width: 220px;
+    height: auto;
+}
+
+.pink {
+    color: pink;
+}
+
+.brown {
+    color: brown;
+}
+
+.orange {
+    color: orange;
+}
+
+.skyblue {
+    color: skyblue;
+}
+
 @media ONLY print {
     body {
         font-family: 'Courier New', Courier, monospace;
