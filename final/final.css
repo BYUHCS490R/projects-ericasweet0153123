@@ -1,0 +1,161 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #233d4d;
+    margin: 0;
+    color: hsl(43, 100%, 95%);
+    text-align: center;
+    line-height: 1.2;
+}
+
+header {
+    background-color: #fcca46;
+    color: #233d4d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsl(44, 100%, 81%);
+    flex-direction: row;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: hsl(44, 100%, 81%);
+    color: #d87504d8;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #d87504d8;
+    color: hsl(44, 100%, 81%);
+}
+
+.side {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: 0;
+    min-width: 220px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side h3 {
+    margin: 0;
+    color: hsl(43, 100%, 95%)
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+main h2 {
+    margin: 0;
+    color: hsl(43, 100%, 95%)
+}
+
+header h1 {
+    margin: 0;
+}
+
+.festival {
+    border: thin solid #cb9b65;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.festival img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.main-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    border: thin solid #cb9b65;
+    box-shadow: 3px 3px 5px #615c55;
+    width: 300px;
+    margin: 5px;
+}
+
+.card img {
+    width: 100%;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cb9b65;
+    text-align: left;
+    margin-bottom: 20px; 
+}
+
+figcaption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #619b8a
+}
+
+@media ONLY print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    article {
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    nav {
+    display: none;
+    }
+
+    .row {
+        gap: 12px;
+    }
+}
+
+@media ONLY screen AND (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .main-row {
+        flex-direction: column-reverse;
+    }
+
+    .side {
+        width: 100%;
+    }
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
