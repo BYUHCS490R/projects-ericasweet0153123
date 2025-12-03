@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals in Korea</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body class="home">
+    <header>
+        <h1>Festivals in Korea</h1>
+    </header>
+    <nav>
+        <a href="final.html" class="navlink">Home</a>
+        <a href="spsm.html" class="navlink">Spring/Summer</a>
+        <a href="atwt.html" class="navlink">Autumn/Winter</a>
+        <a href="table.html" class="navlink">Seasonal Festival Overview</a>
+        <a href="form.html" class="current">Festival Recommendation Form</a>
+    </nav>
+    <main>
+        <h2>Find your perfect Festival</h2>
+        <div id="message"></div>
+        <form action="process.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row check-row">
+                    <span class="label-text">Festival Preferences:</span>
+                    <label class="option"><input type="radio" name="preference" value="Watching-focused"> Watching-focused</label>
+                    <label class="option"><input type="radio" name="preference" value="Activity-focused"> Activity-focused</label>
+                </div>
+                <div class="form-row check-row">
+                    <span class="label-text">Travel Style:</span>
+                    <label class="option"><input type="radio" name="travelType" value="urban travel"> Urban travel</label>
+                    <label class="option"><input type="radio" name="travelType" value="rural travel"> Rural travel</label>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="18" max="100" placeholder="18">
+                </div>
+                <div class="form-row">
+                    <label for="season">Favorite Season:</label>
+                    <select name="season" id="season">
+                        <option value="blank" selected>---</option>
+                        <option value="Spring">Spring</option>
+                        <option value="Summer">Summer</option>
+                        <option value="Fall">Fall</option>
+                        <option value="Winter">Winter</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="when">From:</label>
+                    <input type="date" name="from" id="from">
+                </div>
+                <div class="form-row">
+                    <label for="when">To:</label>
+                    <input type="date" name="to" id="to">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Location of Stay:</label>
+                    <input type="text" name="location" placeholder="Busan Haeundae" id="location">
+                </div>
+                <div class="form-row">
+                    <label for="companion">Travel Companion:</label>
+                    <select name="companion" id="companion">
+                        <option value="blank" selected>---</option>
+                        <option value="Alone">Alone</option>
+                        <option value="Friends">Friends</option>
+                        <option value="Family">Family</option>
+                        <option value="Colleagues">Colleagues</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="your@email.com">
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments:</label>
+                    <textarea name="comment" id="comment">Hello</textarea>
+                </div>
+                <div class="form-row check-row">
+                    <span class="label-text"></span>
+                    <label class="option">
+                        <input type="checkbox" name="terms" checked> I agree to receive the results by email.
+                    </label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hyojin Cho.</p>
+        <p>&copy; Images courtesy of Wikimedia Commons, Pinterest, and Layers of Learning are not copyrighted by me.</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>

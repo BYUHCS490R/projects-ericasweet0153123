@@ -214,6 +214,65 @@ figcaption {
     color: skyblue;
 }
 
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.check-row .option {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.check-row input[type="radio"],
+.check-row input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.label-text {
+    width: 150px;
+    text-align: left;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.form-row input:not([type='submit']), .form-row select, .form-row textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border-color: #384a34;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+}
+
+.form-row input:not([type='submit']):focus, .form-row select:focus, .form-row textarea:focus {
+    background-color: mintcream;
+}
+
+.form-row input[type='submit'] {
+    background-color: #384a34;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+fieldset {
+    background-color: #a1c181;
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    background-color: #619b8a;
+    color: white;
+    padding: 10px;
+}
+
 @media ONLY print {
     body {
         font-family: 'Courier New', Courier, monospace;
@@ -245,6 +304,18 @@ figcaption {
 
     .side {
         width: 100%;
+    }
+
+    .form-row, .check-row {
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer {
+        text-align: left;
+    }
+
+    .form-row input[type='submit'] {
+        padding: 10px 40px;
     }
 }
 
