@@ -265,6 +265,18 @@ footer p {
     text-align: right;
 }
 
+.form-row label {
+    width: 180px;
+    text-align: left;
+    display: inline-block;
+}
+
+#myForm {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .form-row input:not([type='submit']), .form-row select, .form-row textarea {
     padding: 8px;
     border-radius: 4px;
@@ -298,17 +310,54 @@ legend {
 
 .square {
     display: flex;
+    gap: 20px;
     justify-content: center;
 }
 
 .squarebox {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    max-width: 1200px;
-    height: 800px;
+    max-width: 1000px;
     background-color: #a1c181;
     padding: 20px;
     border: 2px solid #384a34;
     border-radius: 5px;
+}
+
+.above {
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.last {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18.5px;
+    font-weight: bold;
+}
+
+.safety {
+    font-size: 12px;
+}
+
+.safety h3 {
+    text-align: left;
+}
+
+.referencev {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+iframe {
+    border: 0;
+    flex-shrink: 0;
 }
 
 @media ONLY print {
