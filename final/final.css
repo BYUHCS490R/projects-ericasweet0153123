@@ -215,7 +215,8 @@ figcaption {
     width: 500px;
     max-width: 500px;
     height: auto;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
 }
 
 footer p {
@@ -293,6 +294,21 @@ legend {
     background-color: #619b8a;
     color: white;
     padding: 10px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+}
+
+.squarebox {
+    width: 90%;
+    max-width: 1200px;
+    height: 800px;
+    background-color: #a1c181;
+    padding: 20px;
+    border: 2px solid #384a34;
+    border-radius: 5px;
 }
 
 @media ONLY print {
