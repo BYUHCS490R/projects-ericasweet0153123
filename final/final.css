@@ -117,6 +117,25 @@ header h1 {
     width: 100%;
 }
 
+.reference {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.reference a {
+    color: hsl(43, 100%, 95%);
+}
+
+.imgreference {
+    font-size: 12px;
+    text-align: center;
+}
+
+.imgreference a {
+    color: hsl(43, 100%, 95%);
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
@@ -198,20 +217,8 @@ figcaption {
     height: auto;
 }
 
-.pink {
-    color: pink;
-}
-
-.brown {
-    color: brown;
-}
-
-.orange {
-    color: orange;
-}
-
-.skyblue {
-    color: skyblue;
+footer p {
+    font-size: 13px;
 }
 
 .form-row, .check-row {
